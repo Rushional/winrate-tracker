@@ -9,11 +9,23 @@ import lombok.Setter;
 @Getter
 @Setter
 public class MatchCard {
+
+    public MatchCard() {}
+
+    public MatchCard(Match match, Card card, boolean isDrawn, boolean isPlayed) {
+        this.match = match;
+        this.card = card;
+        this.isDrawn = isDrawn;
+        this.isPlayed = isPlayed;
+    }
+
     @Id
     @GeneratedValue
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(
+        cascade = CascadeType.PERSIST
+    )
     @JoinColumn(name = "match_id", referencedColumnName = "id")
     private Match match;
     @ManyToOne

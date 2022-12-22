@@ -1,9 +1,6 @@
 package com.rushional.winrate_tracker.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToMany;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,16 +10,21 @@ import java.util.List;
 @Getter
 @Setter
 public class Card {
+    public Card() {}
+
+    public Card(String name) {
+        this.name = name;
+    }
+
     @Id
     @GeneratedValue
     private Long id;
 
     private String name;
 
-//    TODO: not sure if we actually need this code for MtM to work
     @ManyToMany(mappedBy = "cardsList")
     List<Deck> decksList;
 
-    @ManyToMany(mappedBy = "cardsList")
-    List<Match> matchesList;
+    @OneToMany(mappedBy = "card")
+    List<MatchCard> matchesAssociation;
 }

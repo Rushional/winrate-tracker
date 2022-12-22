@@ -4,12 +4,25 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Getter
 @Setter
 public class Deck {
+
+    public Deck() {}
+
+    public Deck(String deckCode, String notes) {
+        this.deckCode = deckCode;
+        this.notes = notes;
+        cardsList = new ArrayList<>();
+        matchesList = new ArrayList<>();
+    }
+
+
+
     @Id
     @GeneratedValue
     private Long id;
@@ -24,4 +37,7 @@ public class Deck {
         joinColumns = @JoinColumn(name = "deck_id"),
         inverseJoinColumns = @JoinColumn(name = "card_id"))
     List<Card> cardsList;
+
+    @OneToMany(mappedBy = "deck")
+    List<Match> matchesList;
 }
