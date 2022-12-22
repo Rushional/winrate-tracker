@@ -27,7 +27,4 @@ public class Card {
 
     @ManyToMany(mappedBy = "cardsList")
     List<Deck> decksList;
-
-    @OneToMany(mappedBy = "card")
-    List<MatchCard> matchesAssociation;
 }
