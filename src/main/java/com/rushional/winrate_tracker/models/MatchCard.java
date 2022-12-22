@@ -1,5 +1,6 @@
 package com.rushional.winrate_tracker.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,6 +9,7 @@ import lombok.Setter;
 @Table(name = "match_card")
 @Getter
 @Setter
+@JsonIgnoreProperties({"match"})
 public class MatchCard {
 
     public MatchCard() {}
