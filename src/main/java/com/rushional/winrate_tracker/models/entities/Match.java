@@ -1,4 +1,4 @@
-package com.rushional.winrate_tracker.models;
+package com.rushional.winrate_tracker.models.entities;
 
 import jakarta.persistence.*;
 import lombok.Getter;

@@ -1,7 +1,6 @@
 package com.rushional.winrate_tracker.controllers;
 
-import com.rushional.winrate_tracker.models.Card;
-import com.rushional.winrate_tracker.models.Deck;
+import com.rushional.winrate_tracker.models.entities.Deck;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.RepresentationModelAssembler;
 import org.springframework.stereotype.Component;

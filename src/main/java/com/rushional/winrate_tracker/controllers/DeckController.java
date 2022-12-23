@@ -1,8 +1,8 @@
 package com.rushional.winrate_tracker.controllers;
 
 import com.rushional.winrate_tracker.controllers.exceptions.DeckNotFoundException;
-import com.rushional.winrate_tracker.models.Deck;
-import com.rushional.winrate_tracker.models.DeckRepository;
+import com.rushional.winrate_tracker.models.entities.Deck;
+import com.rushional.winrate_tracker.models.repositories.DeckRepository;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.IanaLinkRelations;

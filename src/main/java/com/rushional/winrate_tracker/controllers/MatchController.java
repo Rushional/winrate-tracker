@@ -1,8 +1,8 @@
 package com.rushional.winrate_tracker.controllers;
 
 import com.rushional.winrate_tracker.controllers.exceptions.MatchNotFoundException;
-import com.rushional.winrate_tracker.models.Match;
-import com.rushional.winrate_tracker.models.MatchRepository;
+import com.rushional.winrate_tracker.models.entities.Match;
+import com.rushional.winrate_tracker.models.repositories.MatchRepository;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.IanaLinkRelations;

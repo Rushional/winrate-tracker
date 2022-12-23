@@ -1,4 +1,4 @@
-package com.rushional.winrate_tracker.models;
+package com.rushional.winrate_tracker.models.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
@@ -22,8 +22,6 @@ public class Deck {
         cardsList = new ArrayList<>();
         matchesList = new ArrayList<>();
     }
-
-
 
     @Id
     @GeneratedValue

@@ -1,8 +1,8 @@
 package com.rushional.winrate_tracker.controllers;
 
 import com.rushional.winrate_tracker.controllers.exceptions.CardNotFoundException;
-import com.rushional.winrate_tracker.models.Card;
-import com.rushional.winrate_tracker.models.CardRepository;
+import com.rushional.winrate_tracker.models.entities.Card;
+import com.rushional.winrate_tracker.models.repositories.CardRepository;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.IanaLinkRelations;
