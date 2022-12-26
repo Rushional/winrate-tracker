@@ -64,8 +64,8 @@ public class DemoData {
         matchCardRepo.save(matchCard11Carnage);
         matchCard11Carnage.setMatch(match11);
         matchCard11Carnage.setCard(cardCarnage);
-        matchCard11Carnage.setDrawn(false);
-        matchCard11Carnage.setPlayed(false);
+        matchCard11Carnage.setDrawn(true);
+        matchCard11Carnage.setPlayed(true);
         matchCardRepo.save(matchCard11Carnage);
 
         matchCardRepo.save(matchCard11Hood);
@@ -83,7 +83,7 @@ public class DemoData {
         matchCard12Hood.setMatch(match12);
         matchCard12Hood.setCard(cardTheHood);
         matchCard12Hood.setDrawn(true);
-        matchCard12Hood.setPlayed(true);
+        matchCard12Hood.setPlayed(false);
         matchCardRepo.save(matchCard12Hood);
 
         MatchCard matchCard12Carnage = new MatchCard();
@@ -107,8 +107,8 @@ public class DemoData {
         matchCardRepo.save(matchCard13Hood);
         matchCard13Hood.setMatch(match13);
         matchCard13Hood.setCard(cardTheHood);
-        matchCard13Hood.setDrawn(true);
-        matchCard13Hood.setPlayed(true);
+        matchCard13Hood.setDrawn(false);
+        matchCard13Hood.setPlayed(false);
         matchCardRepo.save(matchCard13Hood);
 
         MatchCard matchCard13Carnage = new MatchCard();
@@ -141,7 +141,7 @@ public class DemoData {
         matchCardRepo.save(matchCard14Carnage);
         matchCard14Carnage.setMatch(match14);
         matchCard14Carnage.setCard(cardCarnage);
-        matchCard14Carnage.setDrawn(false);
+        matchCard14Carnage.setDrawn(true);
         matchCard14Carnage.setPlayed(false);
         matchCardRepo.save(matchCard14Carnage);
 
