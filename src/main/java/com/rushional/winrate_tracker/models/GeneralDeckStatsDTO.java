@@ -3,7 +3,7 @@ package com.rushional.winrate_tracker.models;
 import lombok.Getter;
 
 @Getter
-public class DeckStatsDTO {
+public class GeneralDeckStatsDTO {
     private Double averageCubeGain;
     private Double winrate;
     private Long totalCubes;
@@ -11,8 +11,8 @@ public class DeckStatsDTO {
     private Double missedSnaps;
     private Double loosingSnaps;
 
-    public DeckStatsDTO(Double averageCubeGain, Double winrate, Long totalCubes,
-                        Long matchesAmount, Double missedSnaps, Double loosingSnaps) {
+    public GeneralDeckStatsDTO(Double averageCubeGain, Double winrate, Long totalCubes,
+                               Long matchesAmount, Double missedSnaps, Double loosingSnaps) {
         this.averageCubeGain = averageCubeGain;
         this.winrate = winrate;
         this.totalCubes = totalCubes;
